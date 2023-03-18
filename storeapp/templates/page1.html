@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>SchoolMart</title>
+    <link rel="icon" href="https://i.gifer.com/origin/28/2818e08dc5ea230f0e579a1aedb2852b_w200.gif" type="image/gif" sizes="16x16">
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-link{
+    color:black;
+    font-weight: 600;
+
+
+
+}
+.navbar-brand{
+    color: black;
+    font-family:fantasy;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.canva{
+  background: url(https://static.vecteezy.com/system/resources/previews/005/051/483/non_2x/students-learning-and-discussing-with-online-teacher-illustration-concept-flat-illustration-isolated-on-white-background-vector.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.offcanvas{
+  background: white;
+}
+.content{
+  position: absolute;
+  top: 102%;
+  left: 50%;
+
+  transform: translate(-50%);
+  color:white;
+  text-align: center;
+
+}
+.content input{
+  height: 65px;
+  width:70%;
+  background: white;
+  padding:20px;
+  border-radius: 5px;
+
+  outline:auto;
+  border:none;
+
+}
+.btn2{
+  height: 45px;
+  width:150px;
+  color:white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+  background-color: blue;
+  margin-left:-165px;
+
+}
+
+.btn2:hover{
+  background-color: green;
+}
+.footer{
+	background-color:rgba(255, 249, 249, 0.801);
+    padding: 20px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: rgb(55, 55, 238);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: black;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: black;
+	background-color: #ffffff;
+}
+
+</style>
+
+  </head>
+  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <section class="canva" id="lkj">
+      <nav class="navbar navbar-expand-lg bg-light"  >
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#"><i class="fas fa-laptop"></i>&nbsp;School Mart</a>
+
+
+          <button class="navbar-toggler" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas"  aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"><i class="bi bi-caret-down-square-fill"></i></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExample">SchoolMart</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                    <a class="nav-link px-5" href="{% url 'loginpage' %}">Login</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link px-5" aria-current="page" href="{% url 'registerpage' %}">Register</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link px-5"  href="#qwe">Products</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link px-5" href="#uio">Contact Us</a>
+                 </li>
+                <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                 Departments
+              </a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/BioScience">Bio-Science</a></li>
+				<li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Computer_science">Computer Science</a></li>
+                <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/E-commerce">Commerce with CA</a></li>
+                <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Business_mathematics">Commerce with Maths</a></li>
+                <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Humanities">Humanities</a></li>
+				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#">Staffs</a></li>
+			  </ul>
+            </li>
+              </ul>
+              <form class="d-flex" action="{% url 'loginpage' %}">
+
+                <button class="btn btn-outline-primary" type="submit">Explore Stores</button>
+              </form>
+
+          </div>
+        </div>
+        </div>
+
+      </nav>
+
+
+      <div class="container text-dark">
+        <div class="row">
+          <div class="col-lg-8 m-auto content">
+                <form action="{% url 'loginpage' %}">
+            <input type="text" size="50%" placeholder="Suggestions and Complaints"> <button class="btn2">Send</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <section class="bg-light p-5" id="qwe">
+    <div class="container">
+      <h1 class="text-center">PRODUCTS</h1> <br> <br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?w=740&t=st=1679128523~exp=1679129123~hmac=168c19e36e2bde10d12ed012437cf780cedae75bc810e1e0d9a38ea154994828" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Books</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-3" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-vector/realistic-back-school-elements-collection_23-2149454698.jpg?w=740&t=st=1679128594~exp=1679129194~hmac=997fb9d71928149f0e7a6ed29b098b17e336ab854762d0d6561d4712c94b288a" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">School Accessories </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-3" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-vector/colorful-education-concept-with-flat-design_23-2147903636.jpg?w=740&t=st=1679128739~exp=1679129339~hmac=5bd743d28d669ee541f39b90eb15175284c0e245dfdfe44fce2b0307f6daba33" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lab Stuffs</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <a href="#lkj"><i class="bi bi-house"></i></a>
+      </div>
+    </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <section class="bg-light p-5" id="rty">
+      <div class="container">
+        <h1 class="text-center">WHY STUDENTS LOVE US ?</h1> <br> <br>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="abc" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                       <div class="row">
+                         <div class="col-sm-12 col-lg-4">
+                           <div class="card" style="background-color:lightskyblue; width: 300px;margin: auto;">
+                             <img src="https://deejayfarm.com/wp-content/uploads/2019/10/Profile-pic.jpg" class="card-img-top">
+                             <div class="card-body">
+                               <h4 class="card-title" style="text-align:center" >Student 1</h4><br>
+                               <p class="card-text"><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</i></p>
+
+                             </div>
+
+                           </div>
+
+                         </div>
+                         <div class="col-sm-12 col-lg-4">
+                           <div class="card" style="background-color:lightskyblue; width: 300px;">
+                             <img src="https://deejayfarm.com/wp-content/uploads/2019/10/Profile-pic.jpg" class="card-img-top">
+                             <div class="card-body">
+                               <h4 class="card-title" style="text-align:center">Student 2</h4><br>
+                               <p class="card-text"><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</i></p>
+
+
+                             </div>
+
+                           </div>
+
+                         </div>
+                         <div class="col-sm-12 col-lg-4">
+                           <div class="card" style="background-color:lightskyblue;width: 300px;">
+                             <img src="https://deejayfarm.com/wp-content/uploads/2019/10/Profile-pic.jpg" class="card-img-top">
+                             <div class="card-body">
+                               <h4 class="card-title" style="text-align:center">Student 3</h4><br>
+                               <p class="card-text"><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</i></p>
+
+
+                             </div>
+
+                           </div>
+
+                         </div>
+
+                       </div>
+
+                     </div>
+
+
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                       <div class="row">
+                         <div class="col-sm-12 col-lg-4">
+                           <div class="card" style="background-color:lightskyblue;width: 300px;margin: auto;">
+                             <img src="https://thumbs.dreamstime.com/z/default-avatar-profile-icon-default-avatar-profile-icon-grey-photo-placeholder-illustrations-vectors-105356006.jpg" class="card-img-top">
+                             <div class="card-body">
+                               <h4 class="card-title" style="text-align:center">Student 4</h4><br>
+                               <p class="card-text"><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</i></p>
+
+
+                             </div>
+
+                           </div>
+
+                         </div>
+                         <div class="col-sm-12 col-lg-4">
+                           <div class="card" style="background-color:lightskyblue;width: 300px;">
+                             <img src="https://thumbs.dreamstime.com/z/default-avatar-profile-icon-default-avatar-profile-icon-grey-photo-placeholder-illustrations-vectors-105356006.jpg" class="card-img-top">
+                             <div class="card-body">
+                               <h4 class="card-title" style="text-align:center">Student 5</h4><br>
+                               <p class="card-text"><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</i></p>
+
+
+                             </div>
+
+                           </div>
+
+                         </div>
+                         <div class="col-sm-12 col-lg-4">
+                           <div class="card" style="background-color:lightskyblue;width: 300px;">
+                             <img src="https://thumbs.dreamstime.com/z/default-avatar-profile-icon-default-avatar-profile-icon-grey-photo-placeholder-illustrations-vectors-105356006.jpg" class="card-img-top">
+                             <div class="card-body">
+                               <h4 class="card-title" style="text-align:center">Student 6</h4><br>
+                               <p class="card-text"><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</i></p>
+
+
+                             </div>
+
+                           </div>
+
+                         </div>
+
+                       </div>
+
+                     </div>
+
+
+                  </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#abc" role="button" data-slide="prev">
+                  <span class="fa fa-chevron-left fa-lg" style="color:black;"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#abc" role="button" data-slide="next">
+                  <span class="fa fa-chevron-right fa-lg" style="color:black;"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div> <a href="#lkj"><i class="bi bi-house"></i></a>
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<section id="uio">
+  <h1 style="text-align:center; ">ABOUT US</h1>
+  <br>
+  <br>
+  <footer class="footer" >
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>School Mart</h4>
+          <ul>
+            <li><a href="#">history of our school</a></li>
+            <li><a href="#">store services</a></li>
+            <li><a href="#">privacy policy</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">customer support</a></li>
+            <li><a href="#">complaints</a></li>
+            <li><a href="#">suggestions</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Commerce</a></li>
+            <li><a href="#">Humanities</a></li>
+            <li><a href="#">Entrance Coaching</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <a href="#lkj"><i class="bi bi-house"></i></a>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <p style="text-align:center" >© Copyright 2023 | Design by Aron Chacko</p>
+ </footer>
+
+
+</section>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  </body>
+</html>
